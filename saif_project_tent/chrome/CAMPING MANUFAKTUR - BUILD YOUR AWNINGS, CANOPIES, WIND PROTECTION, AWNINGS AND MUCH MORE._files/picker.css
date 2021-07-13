@@ -1,0 +1,75 @@
+  /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+  .rangslider {
+      -webkit-appearance: none;
+      width: 80%;
+      height: 5px;
+      border-radius: 5px;
+      background: var(--main-bg-color);
+      border: 1px solid var(--active-bg-color) ;
+      outline: none;
+      opacity: 1;
+    }
+  
+  .rangeclone{
+    width: 2%;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--active-bg-color);
+    position: absolute;
+    z-index: 90;
+   }
+   .rangeclonewidth{
+    width: 2%;
+    height: 5px;
+    border-radius: 5px;
+    background:  var(--active-bg-color);
+    position: absolute;
+    z-index: 90;
+   }
+   .rangeclonethickness{
+    width: 2%;
+    height: 5px;
+    border-radius: 5px;
+    background:  var(--active-bg-color);
+    position: absolute;
+    z-index: 90;
+   }
+   .rangeclonestripe{
+    width: 2%;
+    height: 5px;
+    border-radius: 5px;
+    background:  var(--active-bg-color);
+    position: absolute;
+    z-index: 90;
+   }
+    .rangslider:hover {
+      opacity: 1;
+    }
+    .rangslider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width:15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #E1E3E4;
+      background:  var(--active-bg-color);
+      cursor: pointer;
+      z-index: 99;
+    }
+    .rangslider::-moz-range-thumb {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--active-bg-color);
+      cursor: pointer;
+      z-index: 99;
+    }
+    .slidecontainer {
+      color: #636363 ;
+      width: 80%!important;
+    }
+  /**********************/
+  .cm-size {
+      width: 45px;
+      text-align: right;
+  }

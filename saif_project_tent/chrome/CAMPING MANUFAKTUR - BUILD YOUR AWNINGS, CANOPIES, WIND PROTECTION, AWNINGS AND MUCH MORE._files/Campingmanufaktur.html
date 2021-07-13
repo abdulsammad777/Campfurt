@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://app.konfigear.com/campingmanufaktur/Campingmanufaktur.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.v3d-container {
+    
+    overflow: hidden;
+    z-index: 0;
+}
+.v3d-canvas {
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    z-index: -1;
+}
+.v3d-simple-preloader-background {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.v3d-simple-preloader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -90px;
+    width: 180px;
+    height: 180px;
+}
+.v3d-simple-preloader-bar {
+    background: linear-gradient(90deg, #1458ae, #4388e0);
+    width: 0%;
+    height: 3px;
+    margin: 15px -1px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #2b70c7;
+}
+.v3d-simple-preloader-logo {
+    width: 110px;
+    height: 120px;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+.v3d-annotation {
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    width: auto;
+    min-width: 14px;
+    height: 26px;
+    padding: 2px 8px;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+.v3d-annotation-transparent {
+    opacity: 0.5;
+}
+.v3d-annotation-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+    margin-top: 31px;
+    font-family: sans-serif;
+    user-select: none;
+    padding: 1em;
+    min-width: 200px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: .5em;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: opacity .5s;
+    visibility: hidden;
+}
+.v3d-webgl-error {
+    color: #015fb1;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -44px;
+    margin-left: -256px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #015fb1;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+    line-height: 30px;
+    z-index: 10;
+}
+@media only screen and (max-width: 540px) {
+    .v3d-webgl-error {
+        top: 50%;
+        left: 10px;
+        right: 10px;
+        margin-top: -58px;
+        margin-left: 0px;
+    }
+}
+.v3d-webgl-error-link {
+    color: #015fb1;
+}
+.v3d-device-motion-permissions-dialog {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: #f00;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<title>Verge3D Web Interactive</title>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Verge3D Web Interactive">
+<meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+<meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+
+<meta property="og:title" content="Verge3D Web Interactive">
+<meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+<meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+<meta property="og:type" content="website">
+<meta name="generator" content="Verge3D 3.1.1">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://app.konfigear.com/campingmanufaktur/media/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://app.konfigear.com/campingmanufaktur/media/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://app.konfigear.com/campingmanufaktur/media/favicon-16x16.png">
+<link rel="manifest" href="https://app.konfigear.com/campingmanufaktur/media/manifest.json">
+<link rel="mask-icon" href="https://app.konfigear.com/campingmanufaktur/media/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+<script src="./ie_compat.js"></script>
+<script src="./v3d.js"></script>
+<script src="./Campingmanufaktur.js"></script>
+<script src="./ammo.wasm.js"></script>
+<link rel="stylesheet" type="text/css" href="./Campingmanufaktur.css">
+<link rel="stylesheet" type="text/css" href="./checkbox.css">
+<link rel="stylesheet" type="text/css" href="./preloader.css">
+</head>
+<body>
+<div id="v3d-container" class="v3d-container">
+
+<div class="checkboxes">
+<div class=" accessontainer  d-flex align-items-center">
+<span class="fz18 fw-bold primary-color">CARAVAN</span>
+<label id="enivrement-view" class="switch" for="checkbox1">
+<input type="checkbox" id="checkbox1">
+<div class="slider round"></div>
+</label>
+</div>
+</div>
+
+<img id="control-3d" class="control-3d" src="./3D-controle.svg" style="opacity: 1; transition: opacity 0.6s ease 0s; display: none;" alt="" srcset="">
+<div id="preloader" class="preloader-div" style="display:none">
+<div class="preloader-container">
+<div id="preloader_bar" class="preloader-bar"></div>
+</div>
+</div>
+<div class="konfigear-sign p-1">
+<a href="https://app.konfigear.com/campingmanufaktur/Campingmanufaktur.html#" target="_blank"> <img class="img-fluid" src="./Powered-by-konfigear.svg" style="padding: 2px;" alt="Konfigear.com"> </a>
+</div>
+<canvas width="1232" height="510" class="v3d-canvas" style="width: 1232px; height: 510px;"></canvas></div>
+
+
+<script src="./visual_logic.js"></script></body></html>

@@ -1,0 +1,69 @@
+/* __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated */
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#v3d-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: 100% 100%;
+    display: none;
+    z-index: 1;
+}
+
+.fullscreen-open {
+    background-image: url('media/fullscreen_open.svg');
+}
+
+.fullscreen-close {
+    background-image: url('media/fullscreen_close.svg');
+}
+
+/* removes tap blinking on ios devices */
+* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+.preloader-div {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffbf;
+}
+
+.preloader-container {
+  position: absolute;
+  left: 0%;
+  top: 50vh;
+  right: 0%;
+  bottom: 0%;
+  width: 300px;
+  height: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1px;
+}
+
+.preloader-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  background-color: #8cc63f;
+}

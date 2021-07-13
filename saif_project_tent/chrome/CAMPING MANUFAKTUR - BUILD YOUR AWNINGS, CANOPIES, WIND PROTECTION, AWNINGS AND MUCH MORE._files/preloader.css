@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.control-3d {
+  z-index: 99;
+ position:absolute;
+ top:50%;
+ left: 50%;
+ height: 250px;
+ width: 250px;
+ transform: translate(-125px, -125px);
+}
+
+
+.konfigear-sign img{
+              height: 1.5vh;
+              opacity: .3;
+            }
+.konfigear-sign{
+            position: absolute;
+            bottom: 1%;
+            left: 1%;
+            }
+
+.loader__spinner .loader__circle,
+.loader__spinner .loader__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.loader.loading .loader__spinner,
+.loader.success .loader__spinner,
+.loader.error .loader__spinner {
+  display: block;
+}
+
+.loader.loader--sm .loader__spinner {
+  width: 50px;
+}
+
+.loader .loader__spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+}
+
+.loader__spinner {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.loader__spinner:before,
+.loader__spinner:after {
+  content: "";
+}
+
+.loader__spinner:before {
+  display: block;
+  padding-top: 100%;
+}
+
+.loader__spinner:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.loader__spinner .loader__circle svg.gradient-circle {
+  z-index: 1;
+  animation: rotate360 2s linear infinite;
+  transition: 0.3s;
+}
+
+.loader__spinner .loader__circle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 1px;
+  fill: transparent;
+}
+
+.loader svg {
+  stroke: #fff;
+}
+
+svg {
+  outline: 0;
+}
+
+.loader__spinner .loader__circle svg.gray-circle circle {
+  stroke: #d7d7d7;
+}
+
+.loader__spinner .loader__circle svg.gray-circle {
+  z-index: 0;
+}
+
+.loader__spinner .loader__circle svg.gradient-circle circle {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dashoffset: -124;
+  }
+}
